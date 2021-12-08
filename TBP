@@ -1,0 +1,151 @@
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Breadstick#3033 (EA)', 'The Booth Plaza fucker - EARLY ACCESS (EA)')
+
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("Breadstick#3033 - Booth Plaza Fucker") 
+
+local b = w:CreateFolder("Scripts") 
+
+b:Label("The booth plaza fucker",{
+    TextSize = 15; 
+    TextColor = Color3.fromRGB(255,255,255); 
+    BgColor = Color3.fromRGB(69,69,69);
+    
+}) 
+
+b:Button("Fuck it",function()
+_G.test = true
+game.StarterGui:SetCore("SendNotification", {
+Title = "You fucked your booth",
+Text = "Enjoy!",
+Duration = 5,
+})
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "7068077507",
+        ["Text"] = "Breadstick"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "6984179171",
+        ["Text"] = "BrEaDstick"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8080489404",
+        ["Text"] = "BREADSTICK"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "2623197894",
+        ["Text"] = "BreadDsTiCk"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+end)
+
+b:Button("Unfuck it",function()
+_G.test = false
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "You unfucked your booth!",
+Text = "Click the fuck button to fuck it again",
+Duration = 5,
+})
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "7068077507",
+        ["Text"] = "Breadstick"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait()
+    end
+end)
+
+end)
+
+b:Button("Abandon booth",function()
+local args = {
+    [1] = "Abandon"
+}
+
+game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "You abandoned your booth!",
+Text = "Click on a booth to grab another one!",
+Duration = 5,
+})
+end)
+
+b:Button("TP to spawn",function()
+    
+    game.StarterGui:SetCore("SendNotification", {
+Title = "Woooosh!",
+Text = "You've arrived at the fountain!",
+Duration = 5,
+})
+    
+function teleportTO(placeCFrame)
+    local plyr = game.Players.LocalPlayer;
+    if plyr.Character then
+    plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+    end
+end
+teleportTO(game:GetService("Workspace")["Park Fountain"].Emitters.EmitPart.CFrame)
+end)
+
+local b = w:CreateFolder("Delete")
+
+b:Label("Created by : Breadstick#3033",{
+    TextSize = 15; 
+    TextColor = Color3.fromRGB(255,255,255); 
+    BgColor = Color3.fromRGB(69,69,69);
+    
+}) 
+b:DestroyGui()
