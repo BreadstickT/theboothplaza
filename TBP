@@ -1,9 +1,9 @@
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Breadstick#3033 (EA)', 'The Booth Plaza fucker - EARLY ACCESS (EA)')
+Lib.prompt('Breadstick#3033 (EA)', 'The Booth Plaza fucker - EARLY ACCESS (EA)', 5)
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
-local w = library:CreateWindow("Breadstick#3033 - Booth Plaza Fucker") 
+local w = library:CreateWindow("Open me!") 
 
 local b = w:CreateFolder("Scripts") 
 
@@ -42,7 +42,7 @@ spawn(function()
         local args = {
     [1] = "Update",
     [2] = {
-        ["Icon"] = "6984179171",
+        ["Icon"] = "5788424980",
         ["Text"] = "BrEaDstick"
     }
 }
@@ -143,7 +143,7 @@ end)
 local b = w:CreateFolder("Delete")
 
 b:Label("Created by : Breadstick#3033",{
-    TextSize = 15; 
+    TextSize = 14; 
     TextColor = Color3.fromRGB(255,255,255); 
     BgColor = Color3.fromRGB(69,69,69);
     
