@@ -6,7 +6,7 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aika
 
 local w = library:CreateWindow("Open me!") 
 
-local b = w:CreateFolder("Scripts") 
+local b = w:CreateFolder("Scripts!") 
 
 b:Label("The booth plaza fucker",{
     TextSize = 15; 
@@ -168,7 +168,7 @@ end)
 
 
 
-local b = w:CreateFolder("Delete")
+local b = w:CreateFolder("Settings!")
 
 b:Label("Created by : Breadstick#3033",{
     TextSize = 14; 
@@ -177,7 +177,7 @@ b:Label("Created by : Breadstick#3033",{
     
 }) 
 
-b:Button("Discord invite!",function()
+b:Button("Discord invite",function()
 setclipboard("https://discord.gg/AHf3uA7YDF")
 
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
