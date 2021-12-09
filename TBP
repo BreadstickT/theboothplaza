@@ -16,11 +16,9 @@ b:Label("The booth plaza fucker",{
 
 b:Button("Fuck it",function()
 _G.test = true
-game.StarterGui:SetCore("SendNotification", {
-Title = "You fucked your booth",
-Text = "Enjoy!",
-Duration = 5,
-})
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('You fucked your booth!', 'Enjoy!', 5)
+
 
 spawn(function()
     while _G.test == true do
@@ -72,8 +70,8 @@ spawn(function()
         local args = {
     [1] = "Update",
     [2] = {
-        ["Icon"] = "2623197894",
-        ["Text"] = "BreadDsTiCk"
+        ["Icon"] = "8143786234",
+        ["Text"] = "BreadStICK"
     }
 }
 
@@ -81,16 +79,48 @@ spawn(function()
         wait(1)
     end
 end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "5100511597",
+        ["Text"] = "BreadsTick"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
 end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8135791760",
+        ["Text"] = "BreaDdstick"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+-- add another here
+end)
+
+
+
 
 b:Button("Unfuck it",function()
 _G.test = false
 
-game.StarterGui:SetCore("SendNotification", {
-Title = "You unfucked your booth!",
-Text = "Click the fuck button to fuck it again",
-Duration = 5,
-})
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('You unfucked your booth!', 'Go find another booth to fuck!', 5)
 
 spawn(function()
     while _G.test == true do
@@ -116,20 +146,12 @@ local args = {
 
 game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
 
-game.StarterGui:SetCore("SendNotification", {
-Title = "You abandoned your booth!",
-Text = "Click on a booth to grab another one!",
-Duration = 5,
-})
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('You abandonned your booth!', 'You can now claim another booth!', 5)
 end)
 
 b:Button("TP to spawn",function()
     
-    game.StarterGui:SetCore("SendNotification", {
-Title = "Woooosh!",
-Text = "You've arrived at the fountain!",
-Duration = 5,
-})
     
 function teleportTO(placeCFrame)
     local plyr = game.Players.LocalPlayer;
@@ -138,7 +160,12 @@ function teleportTO(placeCFrame)
     end
 end
 teleportTO(game:GetService("Workspace")["Park Fountain"].Emitters.EmitPart.CFrame)
+
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Wooooosh', 'The Booth Plaza fucker - You have arrived at the fountain!', 5)
 end)
+
+
 
 local b = w:CreateFolder("Delete")
 
