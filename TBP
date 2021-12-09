@@ -86,21 +86,6 @@ spawn(function()
         local args = {
     [1] = "Update",
     [2] = {
-        ["Icon"] = "5788424980",
-        ["Text"] = "BreadsTick"
-    }
-}
-
-        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
-        wait(1)
-    end
-end)
-
-spawn(function()
-    while _G.test == true do
-        local args = {
-    [1] = "Update",
-    [2] = {
         ["Icon"] = "8135791760",
         ["Text"] = "BreaDdstick"
     }
