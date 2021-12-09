@@ -1,6 +1,7 @@
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 Lib.prompt('Breadstick#3033', 'The Booth Plaza fucker - V.1', 5)
 
+
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
 local w = library:CreateWindow("Open me!") 
@@ -175,4 +176,14 @@ b:Label("Created by : Breadstick#3033",{
     BgColor = Color3.fromRGB(69,69,69);
     
 }) 
+
+b:Button("Discord invite!",function()
+setclipboard("https://discord.gg/AHf3uA7YDF")
+
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Discord invite!', 'Our discord invite has been copied to your clipboard! - Thanks for using our script! : )', 15)
+end)
+
 b:DestroyGui()
+
+
