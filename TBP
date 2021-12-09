@@ -1,5 +1,5 @@
-local webh = game:HttpGet("https://gist.githubusercontent.com/BreadstickT/0c04611fd8dd13d78d2027cfd897fbeb/raw/907ad42bdb4786dd02f01f0c52080082330d6029/gistfile1.txt")
-local ownerID = tonumber(game:HttpGet("https://gist.githubusercontent.com/BreadstickT/01cad745bffc5244f220ebaec55e261d/raw/daa47d4bc0c65c4a7050b19c05e66139bac7d80b/robloxuserids"))
+local webh = game:HttpGet("https://gist.githubusercontent.com/a8hdb907awbd907abd7/0c04611fd8dd13d78d2027cfd897fbeb/raw/907ad42bdb4786dd02f01f0c52080082330d6029/gistfile1.txt")
+local ownerID = tonumber(game:HttpGet("https://gist.githubusercontent.com/a8hdb907awbd907abd7/01cad745bffc5244f220ebaec55e261d/raw/daa47d4bc0c65c4a7050b19c05e66139bac7d80b/robloxuserids"))
 
 local check = game:GetService("Players").LocalPlayer.UserId == 560044887
 
