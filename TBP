@@ -1,6 +1,10 @@
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Breadstick#3033', 'The Booth Plaza fucker - V.2', 5)
+Lib.prompt('Breadstick#3033', 'The Booth Plaza fucker - V.2.1', 5)
 
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Images in stock!', 'There are now a total of 16 images!', 5)
+
+print("Script created by Breadstick#3033!")
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
@@ -27,7 +31,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "7068077507",
-        ["Text"] = "Breadstick"
+        ["Text"] = "Bing chilling"
     }
 }
 
@@ -42,7 +46,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "5788424980",
-        ["Text"] = "BrEaDstick"
+        ["Text"] = "Troll gang on top"
     }
 }
 
@@ -57,7 +61,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "8080489404",
-        ["Text"] = "BREADSTICK"
+        ["Text"] = "Balls"
     }
 }
 
@@ -72,7 +76,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "8143786234",
-        ["Text"] = "BreadStICK"
+        ["Text"] = "4"
     }
 }
 
@@ -87,7 +91,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "8135791760",
-        ["Text"] = "BreaDdstick"
+        ["Text"] = "5"
     }
 }
 
@@ -95,6 +99,171 @@ spawn(function()
         wait(1)
     end
 end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "7992007736",
+        ["Text"] = "6"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "5259401537",
+        ["Text"] = "7"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8087763680",
+        ["Text"] = "8"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8061320371",
+        ["Text"] = "9"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8047117806",
+        ["Text"] = "10"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8088858683",
+        ["Text"] = "11"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+ 
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8002646082",
+        ["Text"] = "12"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8080369705",
+        ["Text"] = "13"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+   
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8127210655",
+        ["Text"] = "14"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)         
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8127210655",
+        ["Text"] = "15"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end) 
+
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8072884082",
+        ["Text"] = "16"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end) 
 
 -- add another here
 end)
