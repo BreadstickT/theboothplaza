@@ -1,8 +1,8 @@
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Breadstick#3033', 'The Booth Plaza fucker - V.2.1', 5)
+Lib.prompt('Breadstick#3033', 'The Booth Plaza fucker - V.2.2', 5)
 
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Images in stock!', 'There are now a total of 16 images!', 5)
+Lib.prompt('Images in stock!', 'There are now a total of 17 images!', 5)
 
 print("Script created by Breadstick#3033!")
 
@@ -76,7 +76,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "8143786234",
-        ["Text"] = "4"
+        ["Text"] = "Breadstick on top"
     }
 }
 
@@ -265,6 +265,23 @@ spawn(function()
     end
 end) 
 
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8217049009",
+        ["Text"] = "17"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end) 
+
+
+
 -- add another here
 end)
 
@@ -282,8 +299,8 @@ spawn(function()
         local args = {
     [1] = "Update",
     [2] = {
-        ["Icon"] = "7068077507",
-        ["Text"] = "Breadstick"
+        ["Icon"] = "0",
+        ["Text"] = "."
     }
 }
 
@@ -293,6 +310,30 @@ spawn(function()
 end)
 
 end)
+
+b:Button("Troll booth",function()
+	local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "49009724",
+        ["Text"] = "Click to claim this booth"
+    }
+}
+
+	game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+	
+sound = Instance.new("Sound")
+     sound.SoundId = "rbxassetid://6859791025"
+sound.Parent=workspace
+	sound.Volume = 1.5
+     sound:Play()
+
+
+
+	local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+	Lib.prompt('Troll booth', 'Your booth now looks visually vacant but people cannot take it! (Unless you abandon it obviously)', 10)
+end)
+
 
 b:Button("Abandon booth",function()
 local args = {
@@ -305,6 +346,8 @@ local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStu
 Lib.prompt('You abandonned your booth!', 'You can now claim another booth!', 5)
 end)
 
+
+local b = w:CreateFolder("Teleports!")
 b:Button("TP to spawn",function()
     
     
@@ -339,5 +382,4 @@ Lib.prompt('Discord invite!', 'Our discord invite has been copied to your clipbo
 end)
 
 b:DestroyGui()
-
 
