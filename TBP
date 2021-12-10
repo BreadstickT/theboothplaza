@@ -1,5 +1,5 @@
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Breadstick#3033', 'The Booth Plaza fucker - V.2.2', 5)
+Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.2.2', 5)
 
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 Lib.prompt('Images in stock!', 'There are now a total of 17 images!', 5)
@@ -10,19 +10,52 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aika
 
 local w = library:CreateWindow("Open me!") 
 
-local b = w:CreateFolder("Scripts!") 
+local b = w:CreateFolder("Scripts!")
 
-b:Label("The booth plaza fucker",{
-    TextSize = 15; 
-    TextColor = Color3.fromRGB(255,255,255); 
-    BgColor = Color3.fromRGB(69,69,69);
+b:Button("Troll booth",function()
+	local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "49009724",
+        ["Text"] = "Click to claim this booth"
+    }
+}
+
+	game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+	
+sound = Instance.new("Sound")
+     sound.SoundId = "rbxassetid://6859791025"
+sound.Parent=workspace
+	sound.Volume = 1.5
+     sound:Play()
+
+
+
+	local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+	Lib.prompt('Troll booth', 'Your booth now looks visually vacant but people cannot take it! (Unless you abandon it obviously)', 15)
+end)
+
+b:Button("TP to spawn",function()
     
-}) 
+    
+function teleportTO(placeCFrame)
+    local plyr = game.Players.LocalPlayer;
+    if plyr.Character then
+    plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+    end
+end
+teleportTO(game:GetService("Workspace")["Park Fountain"].Emitters.EmitPart.CFrame)
 
-b:Button("Fuck it",function()
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Wooooosh', 'The Booth Plaza fucker - You have arrived at the fountain!', 5)
+end)
+
+local b = w:CreateFolder("Booth spam!") 
+
+b:Button("Spam booth",function()
 _G.test = true
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('You fucked your booth!', 'Enjoy!', 5)
+Lib.prompt('You spammed your booth!', 'The booth will now start spamming bypassed images!', 5)
 
 
 spawn(function()
@@ -288,11 +321,11 @@ end)
 
 
 
-b:Button("Unfuck it",function()
+b:Button("Unspam booth",function()
 _G.test = false
 
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('You unfucked your booth!', 'Go find another booth to fuck!', 5)
+Lib.prompt('Booth unspammed!', 'Go find another booth to spam!', 5)
 
 spawn(function()
     while _G.test == true do
@@ -311,28 +344,6 @@ end)
 
 end)
 
-b:Button("Troll booth",function()
-	local args = {
-    [1] = "Update",
-    [2] = {
-        ["Icon"] = "49009724",
-        ["Text"] = "Click to claim this booth"
-    }
-}
-
-	game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
-	
-sound = Instance.new("Sound")
-     sound.SoundId = "rbxassetid://6859791025"
-sound.Parent=workspace
-	sound.Volume = 1.5
-     sound:Play()
-
-
-
-	local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-	Lib.prompt('Troll booth', 'Your booth now looks visually vacant but people cannot take it! (Unless you abandon it obviously)', 10)
-end)
 
 
 b:Button("Abandon booth",function()
@@ -345,25 +356,6 @@ game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 Lib.prompt('You abandonned your booth!', 'You can now claim another booth!', 5)
 end)
-
-
-local b = w:CreateFolder("Teleports!")
-b:Button("TP to spawn",function()
-    
-    
-function teleportTO(placeCFrame)
-    local plyr = game.Players.LocalPlayer;
-    if plyr.Character then
-    plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
-    end
-end
-teleportTO(game:GetService("Workspace")["Park Fountain"].Emitters.EmitPart.CFrame)
-
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Wooooosh', 'The Booth Plaza fucker - You have arrived at the fountain!', 5)
-end)
-
-
 
 local b = w:CreateFolder("Settings!")
 
