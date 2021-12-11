@@ -318,6 +318,20 @@ spawn(function()
 end) 
 
 
+spawn(function()
+	while _G.test == true do
+		local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "5173393142",
+        ["Text"] = "18"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end) 
 
 -- add another here
 end)
@@ -389,6 +403,22 @@ spawn(function()
     end
 end)
 
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "7829752103",
+        ["Text"] = "sheesh"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+
 
 -- Add another one here
 end)
@@ -427,8 +457,6 @@ b:DestroyGui()
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.2.2', 5)
 
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Images in stock!', 'There are now a total of 17 images!', 5)
 
 
 print("Script created by Breadstick#3033!") -- Credits
