@@ -68,7 +68,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "7068077507",
-        ["Text"] = "Bing chilling"
+        ["Text"] = "1"
     }
 }
 
@@ -83,7 +83,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "5788424980",
-        ["Text"] = "Troll gang on top"
+        ["Text"] = "2"
     }
 }
 
@@ -98,7 +98,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "8080489404",
-        ["Text"] = "Balls"
+        ["Text"] = "3"
     }
 }
 
@@ -113,7 +113,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "8143786234",
-        ["Text"] = "Breadstick on top"
+        ["Text"] = "4"
     }
 }
 
@@ -157,7 +157,7 @@ spawn(function()
         local args = {
     [1] = "Update",
     [2] = {
-        ["Icon"] = "5259401537",
+        ["Icon"] = "8224448459",
         ["Text"] = "7"
     }
 }
@@ -333,6 +333,8 @@ spawn(function()
     end
 end) 
 
+
+
 -- add another here
 end)
 
@@ -348,7 +350,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "7696933980",
-        ["Text"] = "Squid game"
+        ["Text"] = "1"
     }
 }
 
@@ -364,7 +366,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "8111206065",
-        ["Text"] = "amogus"
+        ["Text"] = "2"
     }
 }
 
@@ -379,7 +381,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "8194918665",
-        ["Text"] = "5 minute crafts"
+        ["Text"] = "3"
     }
 }
 
@@ -394,7 +396,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "8207751519",
-        ["Text"] = "mario"
+        ["Text"] = "4"
     }
 }
 
@@ -409,7 +411,7 @@ spawn(function()
     [1] = "Update",
     [2] = {
         ["Icon"] = "7829752103",
-        ["Text"] = "sheesh"
+        ["Text"] = "5"
     }
 }
 
@@ -455,7 +457,10 @@ end)
 b:DestroyGui()
 
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.2.2', 5)
+Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.2.3', 5)
+
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Update!', 'Image 7 was changed because it got content deleted!', 5)
 
 
 
