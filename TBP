@@ -380,6 +380,178 @@ end)
 
 
 
+
+
+local b = w:CreateFolder("Fun stuff!")
+
+b:Label("This will stop after you rejoin the game!",{
+    TextSize = 14; 
+    TextColor = Color3.fromRGB(255,255,255); 
+    BgColor = Color3.fromRGB(69,69,69);
+    
+}) 
+
+b:Button("Hack booths",function()
+
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Booths are hacked!', 'All the unclaimed booths will now be claimed and have a troll face with the word "Hacked" on them.', 5)
+
+while wait() do
+for i,v in pairs(game.Workspace["Booth Blocks"]:GetChildren()) do
+if v.Board.BoothGui.BoothFrame.Description.Text == "Click to claim this booth" and v.Board.BoothGui.BoothFrame.Icon.Image == "rbxassetid://65470494" then
+fireclickdetector(v.Board.ClickDetector)
+game.ReplicatedStorage.Booth:FireServer("Update",{["Icon"] = "2597283821",["Text"] = "Hacked"})
+game.ReplicatedStorage.Booth:FireServer("Abandon")
+game.ReplicatedStorage.Booth:FireServer("Update",{["Icon"] = "2597283821",["Text"] = "Hacked"})
+game.Players.LocalPlayer.PlayerGui.MainGui.BoothCustomisationFrame.Visible = false
+wait(0.1)
+game.Players.LocalPlayer.PlayerGui.MainGui.BoothCustomisationFrame.Visible = false
+elseif v.Board.BoothGui.BoothFrame.Description.Text == "Booth claimed by "..game.Players.LocalPlayer.DisplayName then
+game.ReplicatedStorage.Booth:FireServer("Abandon")
+game.Players.LocalPlayer.PlayerGui.MainGui.BoothCustomisationFrame.Visible = false
+end
+end
+end
+end)
+
+
+b:Button("Super idol booth",function()
+    
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Super idol booth!', 'Your booth will now start singing super idol! - It is recommended to rejoin before clicking anymore buttons!', 10)
+    
+local function change(string)
+string2 = ""
+string = string:split("")
+for i = 1, #string do
+string2 = string2..string[i]
+game.ReplicatedStorage.Booth:FireServer("Update",{["Icon"] = "7792039324",["Text"] = string2})
+wait(0.1)
+end
+wait(1)
+end
+claimed = false
+while claimed == false do
+for i,v in pairs(game.Workspace["Booth Blocks"]:GetChildren()) do
+if v.Board.BoothGui.BoothFrame.Description.Text == "Click to claim this booth" and v.Board.BoothGui.BoothFrame.Icon.Image == "rbxassetid://65470494" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Board.CFrame
+fireclickdetector(v.Board.ClickDetector)
+claimed = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.SpawnLocation.CFrame
+end
+end
+wait()
+end
+while wait() do
+change("Super Idol的笑容")
+change("Super Idol de xiaorong")
+change("都没你的甜")
+change("dou mei ni de tian")
+change("八月正午的阳光")
+change("ba yue zhengwu de yangguang")
+change("都没你耀眼")
+change("dou mei ni yaoyan")
+change("热爱 105 °C的你")
+change("re’ai 105 °C de ni")
+change("滴滴清纯的蒸馏水")
+change("di di qingchun de zhengliushui")
+change("你不知道你有多可爱")
+change("ni bu zhidao ni you duo ke’ai")
+change("跌倒后会傻笑着再站起来")
+change("diedao hou hui shaxiaozhe zai zhan qilai")
+change("你从来都不轻言失败")
+change("ni conglai dou bu qing yan shibai")
+change("对梦想的执着一直不曾更改")
+change("dui mengxiang de zhizhuo yizhi buceng genggai")
+change("很安心 当你对我说")
+change("hen anxin dang ni dui wo shuo")
+change("不怕有我在")
+change("bupa you wo zai")
+change("放着让我来")
+change("fangzhe rang wo lai")
+change("勇敢追自己的梦想")
+change("yonggan zhui ziji de mengxiang")
+change("那坚定的模样")
+change("na jianding de muyang")
+change("Super Idol的笑容")
+change("Super Idol de xiaorong")
+change("都没你的甜")
+change("dou mei ni de tian")
+change("八月正午的阳光")
+change("ba yue zhengwu de yangguang")
+change("都没你耀眼")
+change("dou mei ni yaoyan")
+change("热爱 105 °C的你")
+change("re’ai 105 °C de ni")
+change("滴滴清纯的蒸馏水")
+change("di di qingchun de zhengliushui")
+change("在这独一无二")
+change("zai zhe duyiwu’er")
+change("属于我的时代")
+change("shuyu wo de shidai")
+change("不怕失败来一场")
+change("bupa shibai lai yi chang")
+change("痛快的热爱")
+change("tongkuai de re’ai")
+change("热爱 105°C的你")
+change("re’ai 105°C de ni")
+change("滴滴清纯的蒸馏水")
+change("di di qingchun de zhengliushui")
+change("在这独一无二")
+change("zai zhe duyiwu’er")
+change("属于我的时代")
+change("shuyu wo de shidai")
+change("莫忘了初心常在")
+change("mo wangle chuxin chang zai")
+change("痛快去热爱")
+change("tongkuai qu re’ai")
+change("热爱 105°C的你")
+change("re’ai 105°C de ni")
+change("滴滴清纯的蒸馏水")
+change("di di qingchun de zhengliushui")
+change("喝一口又活力全开")
+change("he yikou you huoli quan kai")
+change("再次回到最佳状态")
+change("zaici hui dao zui jia zhuangtai")
+change("喝一口哟")
+change("he yikou yo")
+change("你不知道你有多可爱")
+change("ni bu zhidao ni you duo ke’ai")
+change("跌倒后会傻笑着再站起来")
+change("diedao hou hui shaxiaozhe zai zhan qilai")
+change("你从来都不轻言失败")
+change("ni conglai dou bu qing yan shibai")
+change("对梦想的执着一直不曾更改")
+change("dui mengxiang de zhizhuo yizhi buceng genggai")
+change("很安心 当你对我说")
+change("hen anxin dang ni dui wo shuo")
+change("不怕有我在")
+change("bupa you wo zai")
+change("放着让我来")
+change("fangzhe rang wo lai")
+change("勇敢追自己的梦想")
+change("yonggan zhui ziji de mengxiang")
+change("那坚定的模样")
+change("na jianding de muyang")
+change("Super Idol的笑容")
+change("Super Idol de xiaorong")
+change("都没你的甜")
+change("dou mei ni de tian")
+change("八月正午的阳光")
+change("ba yue zhengwu de yangguang")
+change("都没你耀眼")
+change("dou mei ni yaoyan")
+change("热爱 105°C的你")
+change("re’ai 105°C de ni")
+change("滴滴清纯的蒸馏水")
+change("di di qingchun de zhengliushui")
+change("在这独一无二")
+change("zai zhe duyiwu’er")
+end
+end)
+
+
+
 local b = w:CreateFolder("Settings!")
 
 b:Label("Created by : Breadstick#3033",{
@@ -388,6 +560,7 @@ b:Label("Created by : Breadstick#3033",{
     BgColor = Color3.fromRGB(69,69,69);
     
 }) 
+
 
 b:Button("Discord invite",function()
 setclipboard("https://discord.gg/AHf3uA7YDF")
