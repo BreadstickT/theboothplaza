@@ -396,6 +396,9 @@ b:Button("Hack booths",function()
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 Lib.prompt('Booths are hacked!', 'All the unclaimed booths will now be claimed and have a troll face with the word "Hacked" on them.', 5)
 
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Credits!', 'Created by GamerD4rker', 3)
+
 while wait() do
 for i,v in pairs(game.Workspace["Booth Blocks"]:GetChildren()) do
 if v.Board.BoothGui.BoothFrame.Description.Text == "Click to claim this booth" and v.Board.BoothGui.BoothFrame.Icon.Image == "rbxassetid://65470494" then
@@ -419,6 +422,9 @@ b:Button("Super idol booth",function()
     
     local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 Lib.prompt('Super idol booth!', 'Your booth will now start singing super idol! - It is recommended to rejoin before clicking anymore buttons!', 10)
+
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+Lib.prompt('Credits!', 'Created by GamerD4rker', 3)
     
 local function change(string)
 string2 = ""
@@ -575,7 +581,7 @@ local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStu
 Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.2.3', 5)
 
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Update!', 'Image 1, 7 and 16 have been removed because they were content deleted!', 5)
+Lib.prompt('Update!', 'Added the "Fun stuff!" folder created by GamerD4rker.', 5)
 
 
 
