@@ -587,7 +587,7 @@ b:DestroyGui()
 
 
     local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-    Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.2.3', 5)
+    Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.3', 5)
 
     local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
     Lib.prompt('Update!', 'Image 10, 12 and 4 has been removed from the hentai spam button! - (They were content deleted)', 5)
