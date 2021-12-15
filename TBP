@@ -4,7 +4,9 @@ local w = library:CreateWindow("Open me!")
 
 local b = w:CreateFolder("Scripts!")
 
-b:Button("Troll booth",function()
+
+
+b:Button("Troll booth",function() ------------------------------------------------------ TROLL BOOTH BUTTON ----------------------------------------------
 	local args = {
     [1] = "Update",
     [2] = {
@@ -27,7 +29,7 @@ sound.Parent=workspace
 	Lib.prompt('Troll booth', 'Your booth now looks visually vacant but people cannot take it! (Unless you abandon it obviously)', 15)
 end)
 
-b:Button("TP to spawn",function()
+b:Button("TP to spawn",function() ------------------------------------------------------ TP TO SPAWN BUTTON ------------------------------------------
     
     
 function teleportTO(placeCFrame)
@@ -38,25 +40,33 @@ function teleportTO(placeCFrame)
 end
 teleportTO(game:GetService("Workspace")["Park Fountain"].Emitters.EmitPart.CFrame)
 
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Wooooosh', 'The Booth Plaza fucker - You have arrived at the fountain!', 5)
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    Lib.prompt('Wooooosh', 'The Booth Plaza fucker - You have arrived at the fountain!', 5)
 end)
 
 
-b:Button("Abandon booth",function()
+b:Button("Abandon booth",function() ------------------------------------------- ABANDON BOOTH BUTTON -------------------------------------------
 local args = {
     [1] = "Abandon"
 }
 
 game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
 
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('You abandonned your booth!', 'You can now claim another booth!', 5)
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    Lib.prompt('You abandonned your booth!', 'You can now claim another booth!', 5)
 end)
 
 local b = w:CreateFolder("Booth spam!") 
 
-b:Button("Spam Hentai",function()
+b:Label("Make sure to press the unspam button after you're done!",{
+    TextSize = 14; 
+    TextColor = Color3.fromRGB(255,255,255); 
+    BgColor = Color3.fromRGB(69,69,69);
+    
+}) 
+
+
+b:Button("Spam Hentai",function() ------------------------------------------- SPAM HENTAI BUTTON -------------------------------------------
 _G.test = true
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 Lib.prompt('You spammed your booth!', 'The booth will now start spamming bypassed images!', 5)
@@ -77,21 +87,6 @@ spawn(function()
     end
 end)
 
-
-spawn(function()
-    while _G.test == true do
-        local args = {
-    [1] = "Update",
-    [2] = {
-        ["Icon"] = "8143786234",
-        ["Text"] = "4"
-    }
-}
-
-        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
-        wait(1)
-    end
-end)
 
 spawn(function()
     while _G.test == true do
@@ -153,20 +148,6 @@ spawn(function()
     end
 end)
 
-spawn(function()
-    while _G.test == true do
-        local args = {
-    [1] = "Update",
-    [2] = {
-        ["Icon"] = "8047117806",
-        ["Text"] = "10"
-    }
-}
-
-        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
-        wait(1)
-    end
-end)
 
 spawn(function()
     while _G.test == true do
@@ -183,20 +164,6 @@ spawn(function()
     end
 end)
  
-spawn(function()
-    while _G.test == true do
-        local args = {
-    [1] = "Update",
-    [2] = {
-        ["Icon"] = "8002646082",
-        ["Text"] = "12"
-    }
-}
-
-        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
-        wait(1)
-    end
-end)
 
 spawn(function()
     while _G.test == true do
@@ -275,15 +242,34 @@ spawn(function()
     end
 end) 
 
+spawn(function()
+	while _G.test == true do
+		local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8254941629",
+        ["Text"] = "1"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end) 
+
+
 
 
 -- add another here
 end)
 
-b:Button("Spam shit",function()
+b:Button("Spam shit",function() ------------------------------------------- SPAM SHIT BUTTON -------------------------------------------
 _G.test = true
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 Lib.prompt('You spammed your booth!', 'The booth will now start spamming bypassed images!', 5)
+
+
+
 
 
 spawn(function()
@@ -362,13 +348,32 @@ spawn(function()
     end
 end)
 
+spawn(function()
+    while _G.test == true do
+        local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "7829752103",
+        ["Text"] = "5"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end)
+
+
+
+
+
 
 
 -- Add another one here
 end)
 
 
-b:Button("Unspam booth",function()
+b:Button("Unspam booth",function() ------------------------------------------- UNSPAM BOOTH BUTTON -------------------------------------------
 _G.test = false
 
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
@@ -384,14 +389,15 @@ end)
 
 local b = w:CreateFolder("Fun stuff!")
 
-b:Label("This will stop after you rejoin the game!",{
+
+b:Label("Warning : The only way to stop this is to rejoin the game!",{
     TextSize = 14; 
-    TextColor = Color3.fromRGB(255,255,255); 
+    TextColor = Color3.fromRGB(255,50,0); 
     BgColor = Color3.fromRGB(69,69,69);
     
 }) 
 
-b:Button("Hack booths",function()
+b:Button("Hack booths",function() ------------------------------------------- HACK BOOTH BUTTON -------------------------------------------
 
 local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 Lib.prompt('Booths are hacked!', 'All the unclaimed booths will now be claimed and have a troll face with the word "Hacked" on them.', 5)
@@ -401,159 +407,159 @@ Lib.prompt('Credits!', 'Created by GamerD4rker', 3)
 
 while wait() do
 for i,v in pairs(game.Workspace["Booth Blocks"]:GetChildren()) do
-if v.Board.BoothGui.BoothFrame.Description.Text == "Click to claim this booth" and v.Board.BoothGui.BoothFrame.Icon.Image == "rbxassetid://65470494" then
-fireclickdetector(v.Board.ClickDetector)
-game.ReplicatedStorage.Booth:FireServer("Update",{["Icon"] = "2597283821",["Text"] = "Hacked"})
-game.ReplicatedStorage.Booth:FireServer("Abandon")
-game.ReplicatedStorage.Booth:FireServer("Update",{["Icon"] = "2597283821",["Text"] = "Hacked"})
-game.Players.LocalPlayer.PlayerGui.MainGui.BoothCustomisationFrame.Visible = false
-wait(0.1)
-game.Players.LocalPlayer.PlayerGui.MainGui.BoothCustomisationFrame.Visible = false
+    if v.Board.BoothGui.BoothFrame.Description.Text == "Click to claim this booth" and v.Board.BoothGui.BoothFrame.Icon.Image == "rbxassetid://65470494" then
+        fireclickdetector(v.Board.ClickDetector)
+            game.ReplicatedStorage.Booth:FireServer("Update",{["Icon"] = "2597283821",["Text"] = "Hacked"})
+            game.ReplicatedStorage.Booth:FireServer("Abandon")
+            game.ReplicatedStorage.Booth:FireServer("Update",{["Icon"] = "2597283821",["Text"] = "Hacked"})
+            game.Players.LocalPlayer.PlayerGui.MainGui.BoothCustomisationFrame.Visible = false
+                wait(0.1)
+            game.Players.LocalPlayer.PlayerGui.MainGui.BoothCustomisationFrame.Visible = false
 elseif v.Board.BoothGui.BoothFrame.Description.Text == "Booth claimed by "..game.Players.LocalPlayer.DisplayName then
-game.ReplicatedStorage.Booth:FireServer("Abandon")
-game.Players.LocalPlayer.PlayerGui.MainGui.BoothCustomisationFrame.Visible = false
-end
-end
-end
+            game.ReplicatedStorage.Booth:FireServer("Abandon")
+            game.Players.LocalPlayer.PlayerGui.MainGui.BoothCustomisationFrame.Visible = false
+            end
+        end
+    end
 end)
 
 
-b:Button("Super idol booth",function()
+b:Button("Super idol booth",function() ------------------------------------------- SUPER IDOL BOOTH BUTTON -------------------------------------------
     
     local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Super idol booth!', 'Your booth will now start singing super idol! - It is recommended to rejoin before clicking anymore buttons!', 10)
+    Lib.prompt('Super idol booth!', 'Your booth will now start singing super idol! - It is recommended to rejoin before clicking anymore buttons!', 10)
 
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Credits!', 'Created by GamerD4rker', 3)
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    Lib.prompt('Credits!', 'Created by GamerD4rker', 3)
     
 local function change(string)
-string2 = ""
-string = string:split("")
+    string2 = ""
+    string = string:split("")
 for i = 1, #string do
-string2 = string2..string[i]
-game.ReplicatedStorage.Booth:FireServer("Update",{["Icon"] = "7792039324",["Text"] = string2})
-wait(0.1)
+    string2 = string2..string[i]
+    game.ReplicatedStorage.Booth:FireServer("Update",{["Icon"] = "7792039324",["Text"] = string2})
+    wait(0.1)
 end
-wait(1)
+    wait(1)
 end
-claimed = false
+    claimed = false
 while claimed == false do
-for i,v in pairs(game.Workspace["Booth Blocks"]:GetChildren()) do
-if v.Board.BoothGui.BoothFrame.Description.Text == "Click to claim this booth" and v.Board.BoothGui.BoothFrame.Icon.Image == "rbxassetid://65470494" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Board.CFrame
-fireclickdetector(v.Board.ClickDetector)
-claimed = true
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.SpawnLocation.CFrame
+    for i,v in pairs(game.Workspace["Booth Blocks"]:GetChildren()) do
+        if v.Board.BoothGui.BoothFrame.Description.Text == "Click to claim this booth" and v.Board.BoothGui.BoothFrame.Icon.Image == "rbxassetid://65470494" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Board.CFrame
+        fireclickdetector(v.Board.ClickDetector)
+        claimed = true
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.SpawnLocation.CFrame
 end
+    end
+    wait()
 end
-wait()
-end
-while wait() do
-change("Super Idol的笑容")
-change("Super Idol de xiaorong")
-change("都没你的甜")
-change("dou mei ni de tian")
-change("八月正午的阳光")
-change("ba yue zhengwu de yangguang")
-change("都没你耀眼")
-change("dou mei ni yaoyan")
-change("热爱 105 °C的你")
-change("re’ai 105 °C de ni")
-change("滴滴清纯的蒸馏水")
-change("di di qingchun de zhengliushui")
-change("你不知道你有多可爱")
-change("ni bu zhidao ni you duo ke’ai")
-change("跌倒后会傻笑着再站起来")
-change("diedao hou hui shaxiaozhe zai zhan qilai")
-change("你从来都不轻言失败")
-change("ni conglai dou bu qing yan shibai")
-change("对梦想的执着一直不曾更改")
-change("dui mengxiang de zhizhuo yizhi buceng genggai")
-change("很安心 当你对我说")
-change("hen anxin dang ni dui wo shuo")
-change("不怕有我在")
-change("bupa you wo zai")
-change("放着让我来")
-change("fangzhe rang wo lai")
-change("勇敢追自己的梦想")
-change("yonggan zhui ziji de mengxiang")
-change("那坚定的模样")
-change("na jianding de muyang")
-change("Super Idol的笑容")
-change("Super Idol de xiaorong")
-change("都没你的甜")
-change("dou mei ni de tian")
-change("八月正午的阳光")
-change("ba yue zhengwu de yangguang")
-change("都没你耀眼")
-change("dou mei ni yaoyan")
-change("热爱 105 °C的你")
-change("re’ai 105 °C de ni")
-change("滴滴清纯的蒸馏水")
-change("di di qingchun de zhengliushui")
-change("在这独一无二")
-change("zai zhe duyiwu’er")
-change("属于我的时代")
-change("shuyu wo de shidai")
-change("不怕失败来一场")
-change("bupa shibai lai yi chang")
-change("痛快的热爱")
-change("tongkuai de re’ai")
-change("热爱 105°C的你")
-change("re’ai 105°C de ni")
-change("滴滴清纯的蒸馏水")
-change("di di qingchun de zhengliushui")
-change("在这独一无二")
-change("zai zhe duyiwu’er")
-change("属于我的时代")
-change("shuyu wo de shidai")
-change("莫忘了初心常在")
-change("mo wangle chuxin chang zai")
-change("痛快去热爱")
-change("tongkuai qu re’ai")
-change("热爱 105°C的你")
-change("re’ai 105°C de ni")
-change("滴滴清纯的蒸馏水")
-change("di di qingchun de zhengliushui")
-change("喝一口又活力全开")
-change("he yikou you huoli quan kai")
-change("再次回到最佳状态")
-change("zaici hui dao zui jia zhuangtai")
-change("喝一口哟")
-change("he yikou yo")
-change("你不知道你有多可爱")
-change("ni bu zhidao ni you duo ke’ai")
-change("跌倒后会傻笑着再站起来")
-change("diedao hou hui shaxiaozhe zai zhan qilai")
-change("你从来都不轻言失败")
-change("ni conglai dou bu qing yan shibai")
-change("对梦想的执着一直不曾更改")
-change("dui mengxiang de zhizhuo yizhi buceng genggai")
-change("很安心 当你对我说")
-change("hen anxin dang ni dui wo shuo")
-change("不怕有我在")
-change("bupa you wo zai")
-change("放着让我来")
-change("fangzhe rang wo lai")
-change("勇敢追自己的梦想")
-change("yonggan zhui ziji de mengxiang")
-change("那坚定的模样")
-change("na jianding de muyang")
-change("Super Idol的笑容")
-change("Super Idol de xiaorong")
-change("都没你的甜")
-change("dou mei ni de tian")
-change("八月正午的阳光")
-change("ba yue zhengwu de yangguang")
-change("都没你耀眼")
-change("dou mei ni yaoyan")
-change("热爱 105°C的你")
-change("re’ai 105°C de ni")
-change("滴滴清纯的蒸馏水")
-change("di di qingchun de zhengliushui")
-change("在这独一无二")
-change("zai zhe duyiwu’er")
-end
+    while wait() do
+        change("Super Idol的笑容")
+        change("Super Idol de xiaorong")
+        change("都没你的甜")
+        change("dou mei ni de tian")
+        change("八月正午的阳光")
+        change("ba yue zhengwu de yangguang")
+        change("都没你耀眼")
+        change("dou mei ni yaoyan")
+        change("热爱 105 °C的你")
+        change("re’ai 105 °C de ni")
+        change("滴滴清纯的蒸馏水")
+        change("di di qingchun de zhengliushui")
+        change("你不知道你有多可爱")
+        change("ni bu zhidao ni you duo ke’ai")
+        change("跌倒后会傻笑着再站起来")
+        change("diedao hou hui shaxiaozhe zai zhan qilai")
+        change("你从来都不轻言失败")
+        change("ni conglai dou bu qing yan shibai")
+        change("对梦想的执着一直不曾更改")
+        change("dui mengxiang de zhizhuo yizhi buceng genggai")
+        change("很安心 当你对我说")
+        change("hen anxin dang ni dui wo shuo")
+        change("不怕有我在")
+        change("bupa you wo zai")
+        change("放着让我来")
+        change("fangzhe rang wo lai")
+        change("勇敢追自己的梦想")
+        change("yonggan zhui ziji de mengxiang")
+        change("那坚定的模样")
+        change("na jianding de muyang")
+        change("Super Idol的笑容")
+        change("Super Idol de xiaorong")
+        change("都没你的甜")
+        change("dou mei ni de tian")
+        change("八月正午的阳光")
+        change("ba yue zhengwu de yangguang")
+        change("都没你耀眼")
+        change("dou mei ni yaoyan")
+        change("热爱 105 °C的你")
+        change("re’ai 105 °C de ni")
+        change("滴滴清纯的蒸馏水")
+        change("di di qingchun de zhengliushui")
+        change("在这独一无二")
+        change("zai zhe duyiwu’er")
+        change("属于我的时代")
+        change("shuyu wo de shidai")
+        change("不怕失败来一场")
+        change("bupa shibai lai yi chang")
+        change("痛快的热爱")
+        change("tongkuai de re’ai")
+        change("热爱 105°C的你")
+        change("re’ai 105°C de ni")
+        change("滴滴清纯的蒸馏水")
+        change("di di qingchun de zhengliushui")
+        change("在这独一无二")
+        change("zai zhe duyiwu’er")
+        change("属于我的时代")
+        change("shuyu wo de shidai")
+        change("莫忘了初心常在")
+        change("mo wangle chuxin chang zai")
+        change("痛快去热爱")
+        change("tongkuai qu re’ai")
+        change("热爱 105°C的你")
+        change("re’ai 105°C de ni")
+        change("滴滴清纯的蒸馏水")
+        change("di di qingchun de zhengliushui")
+        change("喝一口又活力全开")
+        change("he yikou you huoli quan kai")
+        change("再次回到最佳状态")
+        change("zaici hui dao zui jia zhuangtai")
+        change("喝一口哟")
+        change("he yikou yo")
+        change("你不知道你有多可爱")
+        change("ni bu zhidao ni you duo ke’ai")
+        change("跌倒后会傻笑着再站起来")
+        change("diedao hou hui shaxiaozhe zai zhan qilai")
+        change("你从来都不轻言失败")
+        change("ni conglai dou bu qing yan shibai")
+        change("对梦想的执着一直不曾更改")
+        change("dui mengxiang de zhizhuo yizhi buceng genggai")
+        change("很安心 当你对我说")
+        change("hen anxin dang ni dui wo shuo")
+        change("不怕有我在")
+        change("bupa you wo zai")
+        change("放着让我来")
+        change("fangzhe rang wo lai")
+        change("勇敢追自己的梦想")
+        change("yonggan zhui ziji de mengxiang")
+        change("那坚定的模样")
+        change("na jianding de muyang")
+        change("Super Idol的笑容")
+        change("Super Idol de xiaorong")
+        change("都没你的甜")
+        change("dou mei ni de tian")
+        change("八月正午的阳光")
+        change("ba yue zhengwu de yangguang")
+        change("都没你耀眼")
+        change("dou mei ni yaoyan")
+        change("热爱 105°C的你")
+        change("re’ai 105°C de ni")
+        change("滴滴清纯的蒸馏水")
+        change("di di qingchun de zhengliushui")
+        change("在这独一无二")
+        change("zai zhe duyiwu’er")
+    end
 end)
 
 
@@ -568,21 +574,26 @@ b:Label("Created by : Breadstick#3033",{
 }) 
 
 
-b:Button("Discord invite",function()
-setclipboard("https://discord.gg/AHf3uA7YDF")
+b:Button("Discord invite",function() ------------------------------------------- DISCORD INVITE BUTTON -------------------------------------------
+    setclipboard("https://discord.gg/AHf3uA7YDF") ------------------------------------------- DISCORD CLIPBOARD LINK -------------------------------------------
 
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Discord invite!', 'Our discord invite has been copied to your clipboard! - Thanks for using our script! : )', 15)
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    Lib.prompt('Discord invite!', 'Our discord invite has been copied to your clipboard! - Thanks for using our script! : )', 15)
 end)
+
 
 b:DestroyGui()
 
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.2.3', 5)
 
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-Lib.prompt('Update!', 'Added the "Fun stuff!" folder created by GamerD4rker.', 5)
 
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.2.3', 5)
+
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    Lib.prompt('Update!', 'Image 10, 12 and 4 has been removed from the hentai spam button! - (They were content deleted)', 5)
+
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    Lib.prompt('Update!', 'Added a new image to the hentai spam button! (Image 1)', 5)
 
 
 print("Script created by Breadstick#3033!") -- Credits
