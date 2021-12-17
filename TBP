@@ -257,6 +257,20 @@ spawn(function()
     end
 end) 
 
+spawn(function()
+	while _G.test == true do
+		local args = {
+    [1] = "Update",
+    [2] = {
+        ["Icon"] = "8216908591",
+        ["Text"] = "19"
+    }
+}
+
+        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+        wait(1)
+    end
+end) 
 
 
 
@@ -590,10 +604,7 @@ b:DestroyGui()
     Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.3', 5)
 
     local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-    Lib.prompt('Update!', 'Image 10, 12 and 4 has been removed from the hentai spam button! - (They were content deleted)', 5)
-
-    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-    Lib.prompt('Update!', 'Added a new image to the hentai spam button! (Image 1)', 5)
+    Lib.prompt('Update!', 'Added image 19 to the spam hentai button!', 5)
 
 
 print("Script created by Breadstick#3033!") -- Credits
