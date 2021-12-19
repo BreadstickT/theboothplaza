@@ -1,8 +1,8 @@
-local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))() -- THIS IS THE OPEN SOURCED UI USED TO CREATE THE GUI
 
-local w = library:CreateWindow("Open me!") 
+local w = library:CreateWindow("Open me!") -- CREATES THE MENU (NEEDED)
 
-local b = w:CreateFolder("Scripts!")
+local b = w:CreateFolder("Scripts!") -- ADDS THE SCRIPT FOLDER (NEEDED)
 
 
 
@@ -18,14 +18,14 @@ b:Button("Troll booth",function() ----------------------------------------------
 	game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
 	
 sound = Instance.new("Sound")
-     sound.SoundId = "rbxassetid://6859791025"
+     sound.SoundId = "rbxassetid://6859791025" -- THIS IS THE AMONG US SOUND EFFECT WHEN YOU CLICK THE BUTTON
 sound.Parent=workspace
 	sound.Volume = 1.5
      sound:Play()
 
 
 
-	local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+	local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))() -- THIS IS THE NOTIFICATION UI
 	Lib.prompt('Troll booth', 'Your booth now looks visually vacant but people cannot take it! (Unless you abandon it obviously)', 15)
 end)
 
@@ -40,7 +40,7 @@ function teleportTO(placeCFrame)
 end
 teleportTO(game:GetService("Workspace")["Park Fountain"].Emitters.EmitPart.CFrame)
 
-    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))() -- THIS IS THE NOTIFICATION UI
     Lib.prompt('Wooooosh', 'The Booth Plaza fucker - You have arrived at the fountain!', 5)
 end)
 
@@ -52,7 +52,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
 
-    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))() -- THIS IS THE NOTIFICATION UI
     Lib.prompt('You abandonned your booth!', 'You can now claim another booth!', 5)
 end)
 
@@ -68,7 +68,7 @@ b:Label("Make sure to press the unspam button after you're done!",{
 
 b:Button("Spam Hentai",function() ------------------------------------------- SPAM HENTAI BUTTON -------------------------------------------
 _G.test = true
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))() -- THIS IS THE NOTIFICATION UI
 Lib.prompt('You spammed your booth!', 'The booth will now start spamming bypassed images!', 5)
 
 
@@ -257,24 +257,26 @@ spawn(function()
     end
 end) 
 
-spawn(function()
-	while _G.test == true do
-		local args = {
-    [1] = "Update",
-    [2] = {
-        ["Icon"] = "8216908591",
-        ["Text"] = "19"
-    }
-}
-
-        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
-        wait(1)
-    end
-end) 
 
 
-
--- add another here
+-- Copy and paste the below in this area to make a new SPAM (make sure to remove the double dashes)
+--
+--spawn(function()
+--    while _G.test == true do
+--        local args = {
+--    [1] = "Update",
+--    [2] = {
+--        ["Icon"] = "PUT YOUR IMAGE ID HERE",
+--        ["Text"] = "THIS IS THE TEXT BOX THAT WILL APPEAR NEAR THE IMAGE"
+--    }
+--}
+--
+--        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+--        wait(1)
+--   end
+--end)
+--
+--
 end)
 
 b:Button("Spam shit",function() ------------------------------------------- SPAM SHIT BUTTON -------------------------------------------
@@ -383,7 +385,26 @@ end)
 
 
 
--- Add another one here
+-- Copy and paste the below in this area to make a new SPAM 
+--
+--spawn(function()
+--    while _G.test == true do
+--        local args = {
+--    [1] = "Update",
+--    [2] = {
+--        ["Icon"] = "PUT YOUR IMAGE ID HERE",
+--        ["Text"] = "THIS IS THE TEXT BOX THAT WILL APPEAR NEAR THE IMAGE"
+--    }
+--}
+--
+--        game:GetService("ReplicatedStorage").Booth:FireServer(unpack(args))
+--        wait(1)
+--   end
+--end)
+--
+--
+
+
 end)
 
 
@@ -600,11 +621,11 @@ b:DestroyGui()
 
 
 
-    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))() -- NOTIFICATION UI
     Lib.prompt('Breadstick#3033', 'The Booth Plaza script! - V.3', 5)
 
-    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-    Lib.prompt('Update!', 'Added image 19 to the spam hentai button!', 5)
+    local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))() -- NOTIFICATION UI
+    Lib.prompt('Thanks!', 'Thanks for using our script! - It is now discontinued!', 5)
 
 
 print("Script created by Breadstick#3033!") -- Credits
